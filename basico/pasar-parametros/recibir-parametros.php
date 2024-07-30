@@ -16,18 +16,23 @@
 </head>
 <body>
 <h1>Recibir parametros en PHP</h1>
- 
- 
+
 <?php
- echo "El valor de p1 es ",  $_GET["p1"], "<br/>";
- echo "El valor de p2 es ",  $_GET["p2"];  
+function sanitize($data) {
+    return htmlspecialchars($data, ENT_QUOTES, 'ISO-8859-1');
+}
+
+$p1 = isset($_GET["p1"]) ? sanitize($_GET["p1"]) : "No se proporcionó p1";
+$p2 = isset($_GET["p2"]) ? sanitize($_GET["p2"]) : "No se proporcionó p2";
+
+echo "El valor de p1 es ", $p1, "<br/>";
+echo "El valor de p2 es ", $p2;
 ?>
 
 <br><br>
 <hr>
 Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/php/recuperar-datos-de-un-formulario-con-php/">http://lineadecodigo.com/php/recuperar-datos-de-un-formulario-con-php/</a><br/>
 <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
-
 
 </body>
 </html>
