@@ -9,11 +9,10 @@
  */
  ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html lang="es" xml:lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Eliminar elementos duplicados de un array</title>
-
 </head>
 <body>
 <h1>Eliminar elementos duplicados de un array</h1>
@@ -23,8 +22,8 @@ $lista = array(1,1,2,3,4,4,4,5,6,7,7,8,9,10,10);
 $lista_simple = array_values(array_unique($lista));
 
 for ($x=0;$x<count($lista_simple); $x++)
-	echo $lista_simple[$x]."<br/>";	
-	
+    echo $lista_simple[$x]."<br/>";    
+    
 ?>
 
 <br/><br/>
