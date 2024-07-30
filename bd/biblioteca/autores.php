@@ -24,7 +24,7 @@ table td {
 <?php 
 
 
-@ $db = new mysqli(localhost, "root", "", "biblioteca");
+@ $db = new mysqli(localhost, "root", "12345", "biblioteca");
 
 if (mysqli_connect_errno()){
 	echo "Error conectando con la base de datos";
