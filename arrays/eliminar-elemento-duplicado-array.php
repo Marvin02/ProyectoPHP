@@ -22,15 +22,12 @@ $lista = array(1,1,2,3,4,4,4,5,6,7,7,8,9,10,10);
 $lista_simple = array_values(array_unique($lista));
 
 for ($x=0;$x<count($lista_simple); $x++)
-    echo $lista_simple[$x]."<br/>";    
-    
+    echo $lista_simple[$x]."<br/>";      
 ?>
-
 <br/><br/>
 <hr>
 Art&iacute;culo disponible en: <a href="http://lineadecodigo.com/php/eliminar-elementos-duplicados-de-un-array-en-php/">http://lineadecodigo.com/php/eliminar-elementos-duplicados-de-un-array-en-php/</a><br/>
 <a href="http://lineadecodigo.com" title="Linea de Codigo">lineadecodigo.com</a>
-
 </body>
 </html>
 
